@@ -1,0 +1,23 @@
+import hashlib 
+
+ # initializing string 
+
+strhash = "Anil kumar vadiga "
+
+  
+# encoding Anil kumar vadiga using encode() 
+# then sending to md5() 
+
+result = hashlib.md5(strhash.encode()) 
+
+  
+# printing the equivalent hexadecimal value. 
+
+print("The hexadecimal equivalent of hash is : ", end ="") 
+
+print(result.hexdigest())
+
+
+Out put
+
+The hexadecimal equivalent of hash is : feccdf221e90d98ee96e4bbb1403fb6a
